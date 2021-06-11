@@ -1,3 +1,7 @@
+import * as core from './core.js';
+
+core.addModule('bindable-side-mouse-buttons', {});
+
 ig.KEY.MOUSE_LEFT = ig.KEY.MOUSE1;
 ig.KEY.MOUSE_RIGHT = ig.KEY.MOUSE2;
 ig.KEY.MOUSE_MIDDLE = -6;

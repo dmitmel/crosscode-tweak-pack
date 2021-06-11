@@ -1,3 +1,17 @@
 {
-  "labels": {}
+  "labels": {
+    "options": {
+      "headers": {
+        "tweak-pack-mod": "dmitmel's tweak pack"
+      },
+      "twk": {
+        "render-hitboxes": {
+          "enable": {
+            "name": "Render hitboxes",
+            "description": "Render object hitboxes as red wireframes. \\c[2][debug]\\c[0]"
+          }
+        }
+      }
+    }
+  }
 }
