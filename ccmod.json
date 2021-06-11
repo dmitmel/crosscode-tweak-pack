@@ -7,6 +7,7 @@
   "homepage": "https://github.com/dmitmel/crosscode-tweak-pack",
   "prestart": "src/_prestart.js",
   "assets": [
-    "data/lang/sc/gui.en_US.json.patch"
+    "data/lang/sc/gui.en_US.json.patch",
+    "data/lang/sc/gui.ru_RU.json.patch"
   ]
 }

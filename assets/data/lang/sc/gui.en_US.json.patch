@@ -10,6 +10,20 @@
             "name": "Render hitboxes",
             "description": "Render object hitboxes as red wireframes. \\c[2][debug]\\c[0]"
           }
+        },
+        "teleport-anywhere": {
+          "enable": {
+            "name": "Teleport anywhere",
+            "description": "Teleport to any map/room in an area or a dungeon simply by clicking it. \\c[2][cheat]\\c[0]"
+          }
+        }
+      }
+    },
+    "menu": {
+      "map-menu": {
+        "teleport-anywhere": {
+          "question": "\\c[3]Teleport\\c[0] to map \"[!]\"?",
+          "map-id": "\\c[3]Map ID:\\c[0] [!]"
         }
       }
     }

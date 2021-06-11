@@ -2,12 +2,19 @@ if (sc.twk == null) sc.twk = {};
 
 let optionsHeaderAdded = false;
 
+export const modules = new Map();
+
 export function addModule(name, config) {
+  if (modules.has(name)) {
+    throw new Error('A module with the same name has already been registered!');
+  }
+
   let result = {
     name,
     config,
     realOptionIds: {},
   };
+  modules.set(name, result);
 
   if (config.options != null) {
     for (let [optName, optDef] of Object.entries(config.options)) {
@@ -15,7 +22,7 @@ export function addModule(name, config) {
       let rawOptDef = {
         type: optDef.type,
         cat: sc.OPTION_CATEGORY.GENERAL,
-        init: optDef.type,
+        init: optDef.init,
         restart: optDef.restart,
       };
 

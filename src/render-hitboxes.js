@@ -1,5 +1,3 @@
-// see https://github.com/CCDirectLink/crosscode-re-docs/blob/master/renderer.md
-
 import * as core from './core.js';
 
 let module = core.addModule('render-hitboxes', {
@@ -10,6 +8,8 @@ let module = core.addModule('render-hitboxes', {
     },
   },
 });
+
+// see https://github.com/CCDirectLink/crosscode-re-docs/blob/master/renderer.md
 
 const COLL_BOUNDS_PADDING = 0;
 let collMinX = 0;
