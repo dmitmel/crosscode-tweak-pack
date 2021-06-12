@@ -28,6 +28,12 @@
             "name": "Show player position marker",
             "description": "Show a marker for the player's position on the current map. \\c[2][QoL]"
           }
+        },
+        "chest-radar": {
+          "enable": {
+            "name": "Chest radar",
+            "description": "Show markers for all chests in the current map (they are not saved as stamps). \\c[2][cheat]"
+          }
         }
       }
     },
