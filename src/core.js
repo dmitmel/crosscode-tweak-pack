@@ -16,7 +16,7 @@ export class Module {
   }
 
   addOption(optName, optDef) {
-    let rawOptName = `twk.${this.name}.${optName}`;
+    let rawOptName = this.getRawOptionName(optName);
     let rawOptDef = {
       type: optDef.type,
       cat: sc.OPTION_CATEGORY.GENERAL,
@@ -33,5 +33,9 @@ export class Module {
     sc.OPTIONS_DEFINITION[rawOptName] = rawOptDef;
     this.realOptionIds.set(optName, rawOptName);
     return rawOptName;
+  }
+
+  getRawOptionName(optName) {
+    return `twk.${this.name}.${optName}`;
   }
 }

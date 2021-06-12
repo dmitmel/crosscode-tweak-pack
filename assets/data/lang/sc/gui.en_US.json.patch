@@ -16,6 +16,12 @@
             "name": "Teleport anywhere",
             "description": "Teleport to any map/room in an area or a dungeon simply by clicking it. \\c[2][cheat]\\c[0]"
           }
+        },
+        "assist-scale-enemy-hp": {
+          "factor": {
+            "name": "Enemy HP Scale",
+            "description": "Scales the hitpoints of enemies. \\c[1]Needs a restart! \\c[2][assist]"
+          }
         }
       }
     },
