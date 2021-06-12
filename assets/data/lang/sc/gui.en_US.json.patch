@@ -22,6 +22,12 @@
             "name": "Enemy HP Scale",
             "description": "Scales the hitpoints of enemies. \\c[1]Needs a restart! \\c[2][assist]"
           }
+        },
+        "player-position-marker": {
+          "enable": {
+            "name": "Show player position marker",
+            "description": "Show a marker for the player's position on the current map. \\c[2][QoL]"
+          }
         }
       }
     },
