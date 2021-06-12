@@ -1,4 +1,4 @@
-import './core.js';
+import './_core.js';
 
 import './bindable-side-mouse-buttons.js';
 import './render-hitboxes.js';

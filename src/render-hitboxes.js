@@ -1,4 +1,4 @@
-import * as core from './core.js';
+import * as core from './_core.js';
 
 let module = new core.Module('render-hitboxes');
 let optIdEnable = module.addOption('enable', { type: 'CHECKBOX', init: false });
