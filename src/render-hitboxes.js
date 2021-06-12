@@ -1,15 +1,9 @@
 import * as core from './core.js';
 
-let module = core.addModule('render-hitboxes', {
-  options: {
-    enable: {
-      type: 'CHECKBOX',
-      init: false,
-    },
-  },
-});
+let module = new core.Module('render-hitboxes');
+let optIdEnable = module.addOption('enable', { type: 'CHECKBOX', init: false });
 
-// see https://github.com/CCDirectLink/crosscode-re-docs/blob/master/renderer.md
+// see <https://github.com/CCDirectLink/crosscode-re-docs/blob/master/renderer.md>
 
 const COLL_BOUNDS_PADDING = 0;
 let collMinX = 0;
@@ -58,7 +52,7 @@ sc.twk.HitboxRendererMod = ig.GameAddon.extend({
 
   postDrawOrder: 100,
   onPostDraw() {
-    if (!sc.options.get(module.realOptionIds.enable)) {
+    if (!sc.options.get(optIdEnable)) {
       return;
     }
 

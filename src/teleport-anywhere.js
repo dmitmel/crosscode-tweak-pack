@@ -1,13 +1,7 @@
 import * as core from './core.js';
 
-let module = core.addModule('teleport-anywhere', {
-  options: {
-    enable: {
-      type: 'CHECKBOX',
-      init: false,
-    },
-  },
-});
+let module = new core.Module('teleport-anywhere');
+let optIdEnable = module.addOption('enable', { type: 'CHECKBOX', init: false });
 
 // Well, this code turned out to not be as straight-forward as I anticipated
 
@@ -110,7 +104,7 @@ sc.MapAreaContainer.inject({
     // (but before code with side-effects!) to avoid useless dictionary
     // lookups, as the onMouseInteract seems to be called on, like, every
     // frame.
-    if (!sc.options.get(module.realOptionIds.enable)) {
+    if (!sc.options.get(optIdEnable)) {
       return;
     }
 
