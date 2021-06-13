@@ -34,6 +34,12 @@
             "name": "Chest radar",
             "description": "Show markers for all chests in the current map (they are not saved as stamps). \\c[2][cheat]"
           }
+        },
+        "autoaim": {
+          "enable": {
+            "name": "Enable autoaim controls",
+            "description": "Allows playing the game (to some extent) without moving the mouse. \\c[2][cheat]"
+          }
         }
       },
       "controls": {
