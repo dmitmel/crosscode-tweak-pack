@@ -147,4 +147,8 @@ sc.twk.HitboxRendererMod = ig.GameAddon.extend({
   },
 });
 
-ig.addGameAddon(() => new sc.twk.HitboxRendererMod());
+ig.addGameAddon(() => {
+  let addon = new sc.twk.HitboxRendererMod();
+  sc.twk.hitboxRendererMod = addon;
+  return addon;
+});
