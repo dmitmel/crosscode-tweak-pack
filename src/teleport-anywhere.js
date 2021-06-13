@@ -1,5 +1,11 @@
 import * as core from './_core.js';
 
+if (core.isModLoaded('teleport-anywhere')) {
+  console.error(
+    `[${sc.twk.modName}] Please uninstall my other mod "Teleport Anywhere!". Its functionality is now included in the pack, so it is now obselete. The pack is incompatible with it!`,
+  );
+}
+
 let module = new core.Module('teleport-anywhere');
 let optIdEnable = module.addOption('enable', { type: 'CHECKBOX', init: false });
 

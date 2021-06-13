@@ -1,5 +1,11 @@
 import * as core from './_core.js';
 
+if (core.isModLoaded('scale-enemy-hp')) {
+  console.error(
+    `[${sc.twk.modName}] Please uninstall my other mod "Scale Enemy HP". Its functionality is now included in the pack, so it is now obselete. The pack is incompatible with it!`,
+  );
+}
+
 let module = new core.Module('assist-scale-enemy-hp');
 
 // TODO: Figure out how to update the health values for all enemy types if the

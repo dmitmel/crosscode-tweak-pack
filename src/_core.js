@@ -1,7 +1,4 @@
-if (sc.twk == null) sc.twk = {};
-
-let optionsHeaderAdded = false;
-let optionsControlsHeaderAdded = false;
+let optionsHeaderAdded = new Set();
 
 export const modules = new Map();
 
@@ -25,11 +22,7 @@ export class Module {
       restart: optDef.restart,
     };
 
-    if (!optionsHeaderAdded) {
-      rawOptDef.hasDivider = true;
-      rawOptDef.header = 'tweak-pack-mod';
-      optionsHeaderAdded = true;
-    }
+    this._addHeaderToOptionDefinition(rawOptDef);
 
     sc.OPTIONS_DEFINITION[rawOptName] = rawOptDef;
     this.realOptionIds.set(optName, rawOptName);
@@ -46,11 +39,7 @@ export class Module {
       restart: optDef.restart,
     };
 
-    if (!optionsControlsHeaderAdded) {
-      rawOptDef.hasDivider = true;
-      rawOptDef.header = 'tweak-pack-mod';
-      optionsControlsHeaderAdded = true;
-    }
+    this._addHeaderToOptionDefinition(rawOptDef);
 
     sc.OPTIONS_DEFINITION[rawOptName] = rawOptDef;
     this.realOptionIds.set(optName, rawOptName);
@@ -59,5 +48,36 @@ export class Module {
 
   getRawOptionName(optName) {
     return `twk.${this.name}.${optName}`;
+  }
+
+  _addHeaderToOptionDefinition(optDef) {
+    if (!optionsHeaderAdded.has(optDef.cat)) {
+      optDef.hasDivider = true;
+      optDef.header = 'tweak-pack-mod';
+      optionsHeaderAdded.add(optDef.cat);
+    }
+    return optDef;
+  }
+}
+
+export function isModLoaded(id) {
+  let { modloader, versions } = window;
+  if (modloader != null && modloader.loadedMods != null) {
+    return modloader.loadedMods.has(id);
+  } else if (versions != null) {
+    return versions.hasOwnProperty(id);
+  } else {
+    return false;
+  }
+}
+
+{
+  let { modloader } = window;
+  if (!(modloader != null && modloader.version != null && modloader.version.major >= 3)) {
+    if (!isModLoaded('input-api')) {
+      console.error(
+        `[${sc.twk.modName}] input-api is also required for the pack to work. Download it from: https://github.com/CCDirectLink/input-api`,
+      );
+    }
   }
 }
