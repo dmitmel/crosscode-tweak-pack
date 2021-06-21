@@ -54,7 +54,7 @@ sc.MapAreaContainer.inject({
       return;
     }
 
-    let mouseWasOverWhenDragged = this.mouseWasOverWhenDragged;
+    let { mouseWasOverWhenDragged } = this;
     this.mouseWasOverWhenDragged = mouseOver;
 
     // Alright, now I try to replicate a button GUI element without there being

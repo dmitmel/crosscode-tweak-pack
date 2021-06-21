@@ -1,5 +1,6 @@
 import * as core from './_core.js';
 
+// eslint-disable-next-line no-unused-vars
 let module = new core.Module('bindable-side-mouse-buttons');
 
 ig.KEY.MOUSE_LEFT = ig.KEY.MOUSE1;

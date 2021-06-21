@@ -11,5 +11,18 @@
   "assets": [
     "data/lang/sc/gui.en_US.json.patch",
     "data/lang/sc/gui.ru_RU.json.patch"
-  ]
+  ],
+  "scripts": {
+    "lint": "eslint . --ext .js,.ts --ignore-path .gitignore",
+    "check-fmt": "prettier --check '**/*.{js,ts,json,css,scss,html,md}' --ignore-path .gitignore"
+  },
+  "devDependencies": {
+    "eslint": "^7.29.0",
+    "eslint-config-dmitmel": "dmitmel/eslint-config-dmitmel",
+    "eslint-config-prettier": "^8.3.0",
+    "eslint-plugin-node": "^11.1.0",
+    "eslint-plugin-prettier": "^3.4.0",
+    "prettier": "^2.3.1",
+    "ultimate-crosscode-typedefs": "dmitmel/ultimate-crosscode-typedefs"
+  }
 }

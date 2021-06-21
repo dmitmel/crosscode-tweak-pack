@@ -114,6 +114,7 @@ sc.GameModel.inject({
   isAssistMode() {
     // A non-strict comparison is used for consistency with the base game
     // implementation.
+    // eslint-disable-next-line eqeqeq
     return this.parent() || sc.twk.scaleEnemyHpMod.factor != 1;
   },
 });

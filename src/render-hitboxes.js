@@ -112,6 +112,7 @@ sc.twk.HitboxRendererMod = ig.GameAddon.extend({
       //
 
       // prettier-ignore
+      // eslint-disable-next-line no-lone-blocks
       {
         mapPos3ToScreenPos2(v000, px     , py     , pz     );
         mapPos3ToScreenPos2(v100, px + sx, py     , pz     );

@@ -65,7 +65,7 @@ export function isModLoaded(id) {
   if (modloader != null && modloader.loadedMods != null) {
     return modloader.loadedMods.has(id);
   } else if (versions != null) {
-    return versions.hasOwnProperty(id);
+    return Object.prototype.hasOwnProperty.call(versions, id);
   } else {
     return false;
   }
