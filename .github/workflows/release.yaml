@@ -1,0 +1,31 @@
+# Taken from <https://github.com/dmitmel/cc-world-map-overhaul/blob/dde56e4aa88df3386fd8efe72202ef1b1233a554/.github/workflows/release.yaml>.
+
+name: Release
+on:
+  push:
+    tags:
+      - v*
+
+jobs:
+  release:
+    name: Release
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Download
+        uses: actions/checkout@v2
+
+      - name: Make the distributables
+        id: make_release
+        run: exec .github/workflows/release.sh
+
+      - name: Create the release
+        uses: softprops/action-gh-release@v1
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        with:
+          name: ${{ steps.make_release.outputs.title }}
+          draft: true
+          prerelease: false
+          body_path: .github/workflows/release_body_template.md
+          files: ${{ steps.make_release.outputs.dist_files }}
