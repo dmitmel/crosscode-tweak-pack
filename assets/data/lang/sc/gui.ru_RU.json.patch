@@ -1,5 +1,57 @@
 {
   "labels": {
+    "options": {
+      "headers": {
+        "tweak-pack-mod": "dmitmel's tweak pack"
+      },
+      "twk": {
+        "render-hitboxes": {
+          "enable": {
+            "name": "Отображать хитбоксы",
+            "description": "Отображать хитбоксы красными обводками. \\c[2][debug]\\c[0]"
+          }
+        },
+        "teleport-anywhere": {
+          "enable": {
+            "name": "Телепорт куда угодно",
+            "description": "Телепортируйтесь на любую карту/комнату в зоне или подземельи просто кликнув по ней. \\c[2][cheat]\\c[0]"
+          }
+        },
+        "assist-scale-enemy-hp": {
+          "factor": {
+            "name": "Множитель HP врагов",
+            "description": "Изменяет HP врагов. \\c[1]Требуется перезапуск! \\c[2][assist]"
+          }
+        },
+        "player-position-marker": {
+          "enable": {
+            "name": "Показывать маркер положения игрока",
+            "description": "Показывает маркер на местоположении игрока на текущей карте. \\c[2][QoL]"
+          }
+        },
+        "chest-radar": {
+          "enable": {
+            "name": "Радар для сундуков",
+            "description": "Показывает маркеры для всех сундуков на текущей карте (они не сохраняются как метки). \\c[2][cheat]"
+          }
+        },
+        "autoaim": {
+          "enable": {
+            "name": "Включить автоматическое наведение",
+            "description": "Позволяет играть (в какой-то степени) не двигая мышку. \\c[2][cheat]"
+          }
+        }
+      },
+      "controls": {
+        "keys": {
+          "twk": {
+            "open-map-menu-shortcut": {
+              "key": "Открыть/закрыть меню карты"
+            }
+          }
+        }
+      }
+    },
     "menu": {
       "map-menu": {
         "teleport-anywhere": {
