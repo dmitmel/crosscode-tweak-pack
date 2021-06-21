@@ -10,7 +10,8 @@ tweaks to cheats. Also includes tools for debugging and mod development!
 The mods in this list are divided into various categories:
 
 - **QoL** - quality-of-life, various enhancements that don't affect the gameplay significantly.
-  **Recommended by me for the first playthrough!**
+  **Recommended by me for the first playthrough!** (also see my other mod called
+  [World map overhaul](#world-map-overhaul)).
 - **debug** - debugging tools, intended for mod developers.
 - **cheat** - self-descriptive and come with all implications of cheating (i.e. condemnation from
   random people on the Internet), but it's not like I'm gonna prevent you from using these. :P
@@ -87,6 +88,19 @@ if you want to rebind this shortcut.
 **An experimental mod**, allows playing the game (to some extent) without moving the mouse. Use the
 `Q` and `E` keys to focus any enemy, the cursor will follow the focused enemy automatically, and you
 can move the cursor with the mouse to unfocus.
+
+## Other recommended QoL mods
+
+These mods are not included in this pack, but will be interesting nonetheless if you are looking for
+QoL stuff. Again, **recommended by me for the first playthrough!**
+
+### [World map overhaul](https://github.com/dmitmel/cc-world-map-overhaul#readme)
+
+[_Homepage_](https://github.com/dmitmel/cc-world-map-overhaul#readme)
+
+![screenshot](https://raw.githubusercontent.com/dmitmel/cc-world-map-overhaul/master/screenshot.png)
+
+Adds a better world map for CrossCode.
 
 ## Contributing
 
