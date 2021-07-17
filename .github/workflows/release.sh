@@ -75,18 +75,18 @@ ln --symbolic --relative --force --no-target-directory -- . "$mod_id"
 
 rm -f -- "${package_basename}.tgz"
 printf "${mod_id}/%s\n" "${mod_files[@]}" | \
-  tar --create --gzip --file "${package_basename}.tgz" \
+  tar --create --gzip --file="${package_basename}.tgz" \
       --numeric-owner --owner=0 --group=0 --files-from=-
 dist_files+=("${package_basename}.tgz")
 
 rm -f -- "${package_basename}.zip"
 printf "${mod_id}/%s\n" "${mod_files[@]}" | \
-  zip --quiet --must-match --no-wild -X --names-stdin "${package_basename}.zip"
+  zip --quiet --must-match --no-wild -X --names-stdin "./${package_basename}.zip"
 dist_files+=("${package_basename}.zip")
 
 rm -f -- "${package_basename}.ccmod"
 printf "%s\n" "${mod_files[@]}" | \
-  zip --quiet --must-match --no-wild -X --names-stdin "${package_basename}.ccmod"
+  zip --quiet --must-match --no-wild -X --names-stdin "./${package_basename}.ccmod"
 dist_files+=("${package_basename}.ccmod")
 
 gha_command set-output name=dist_files "$(printf "%s\n" "${dist_files[@]}")"
