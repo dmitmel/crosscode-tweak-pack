@@ -20,6 +20,17 @@ The mods in this list are divided into various categories:
 
 Most mods are disabled by default (where it is technically possible).
 
+### Sidenote: Where to find settings of the included mods?
+
+It's simple. Most of them can be found by scrolling down in the **"General"** tab of the regular
+game settings menu:
+
+![screenshot](screenshots/mod-settings.png)
+
+However, other settings may go to other tabs where it makes more sense. For instance, all shortcuts
+are added to the **"Controls"** tab, and all assist options are, obviously, added to the
+**"Assists"** tab.
+
 ### Bindable mouse buttons [QoL]
 
 [_Previous location_](https://github.com/dmitmel/dotfiles/commit/bddaea14dd98032b28abb1ab238dc7684466332a)
