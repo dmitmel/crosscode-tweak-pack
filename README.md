@@ -12,7 +12,7 @@ The mods in this list are divided into various categories:
 - **QoL** - quality-of-life, various enhancements that don't affect the gameplay significantly.
   **Recommended by me for the first playthrough!** (also see my other mod called
   [World map overhaul](#world-map-overhaul)).
-- **debug** - debugging tools, intended for mod developers.
+- **debug** - tools for debugging or somehow else related to mod development.
 - **cheat** - self-descriptive and come with all implications of cheating (i.e. condemnation from
   random people on the Internet), but it's not like I'm gonna prevent you from using these. :P
 - **assist** - additional settings for the
@@ -99,6 +99,11 @@ if you want to rebind this shortcut.
 **An experimental mod**, allows playing the game (to some extent) without moving the mouse. Use the
 `Q` and `E` keys to focus any enemy, the cursor will follow the focused enemy automatically, and you
 can move the cursor with the mouse to unfocus.
+
+### Skip title screen intro [debug]
+
+Does exactly what it says on the tin - skips the intro sequence with logos which plays before the
+title screen.
 
 ## Other recommended QoL mods
 

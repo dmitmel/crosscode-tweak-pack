@@ -40,6 +40,12 @@
             "name": "Enable autoaim controls",
             "description": "Allows playing the game (to some extent) without moving the mouse. \\c[2][cheat]"
           }
+        },
+        "skip-title-screen-intro": {
+          "enable": {
+            "name": "Skip title screen intro",
+            "description": "Skip the intro sequence with logos which plays before the title screen. \\c[2][debug]"
+          }
         }
       },
       "controls": {
