@@ -89,8 +89,6 @@ Shows markers for all chests in the current map (they are not saved as stamps).
 _Always enabled_
 
 Adds a shortcut for quickly opening and closing the map menu, by default assigned to the key `M`.
-Note that you need to have the [input-api](https://github.com/CCDirectLink/input-api) mod installed
-if you want to rebind this shortcut.
 
 ### Autoaim controls [cheat]
 

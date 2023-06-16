@@ -1,9 +1,13 @@
+import { injectInputApi } from './_input-api.js'
+
 export default class {
   constructor(mod) {
     this.mod = mod;
   }
 
   postload() {
+    injectInputApi();
+
     if (sc.twk == null) sc.twk = {};
     sc.twk.mod = this.mod;
 
