@@ -70,14 +70,3 @@ export function isModLoaded(id) {
     return false;
   }
 }
-
-{
-  let { modloader } = window;
-  if (!(modloader != null && modloader.version != null && modloader.version.major >= 3)) {
-    if (!isModLoaded('input-api')) {
-      console.error(
-        `[${sc.twk.modName}] input-api is also required for the pack to work. Download it from: https://github.com/CCDirectLink/input-api`,
-      );
-    }
-  }
-}
