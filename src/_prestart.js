@@ -9,3 +9,5 @@ import './chest-radar.js';
 import './open-map-menu-shortcut.js';
 import './autoaim.js';
 import './skip-title-screen-intro.js';
+import './right-mouse-rebind.js';
+

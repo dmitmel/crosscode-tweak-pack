@@ -40,6 +40,12 @@ _Always enabled_
 Allows binding the 4th and 5th mouse buttons (sometimes called "side buttons") to any action in the
 Controls settings. **Be aware that those buttons don't have an icon for now!**
 
+### Right mouse rebind [QoL]
+
+[_Previous location_](https://github.com/ilyabodo/crosscode-tweak-pack)
+
+Allows the right mouse button functionality to be changed. Currently the right mouse button can be set to: melee, dash only, or guard only.
+
 ### Render hitboxes [debug]
 
 [_Previous location_](https://github.com/dmitmel/crosscode-render-hitboxes)
