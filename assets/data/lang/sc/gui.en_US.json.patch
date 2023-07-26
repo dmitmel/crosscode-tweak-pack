@@ -46,6 +46,12 @@
             "name": "Skip title screen intro",
             "description": "Skip the intro sequence with logos which plays before the title screen. \\c[2][debug]"
           }
+        },
+        "right-mouse-rebind": {
+          "right-mouse": {
+            "name": "Right mouse button rebind",
+            "description": "Rebind right mouse button. 1: Default/normal, 2: Melee, 3: Dash only, 4: Guard only. \\c[2][QoL]"
+          }
         }
       },
       "controls": {
