@@ -1,13 +1,14 @@
 {
   "id": "crosscode-tweak-pack",
-  "version": "1.1.1",
+  "version": "1.1.2",
   "title": "dmitmel's tweak pack",
   "description": {
     "en_US": "Micro-mods by dmitmel in a single 999-in-1 package, ranging from QoL tweaks to cheats.",
     "ru_RU": "Микро-моды от dmitmel в одной упаковке 999-in-1, начиная от QoL дополнений и заканчивая читами."
   },
-  "license": "CC0-1.0",
-  "homepage": "https://github.com/dmitmel/crosscode-tweak-pack",
+  "repository": "https://github.com/dmitmel/crosscode-tweak-pack",
+  "tags": ["QoL"],
+  "authors": "dmitmel",
   "icons": {
     "24": "icon24.png"
   },
