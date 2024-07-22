@@ -1,0 +1,70 @@
+{
+  "labels": {
+    "options": {
+      "headers": {
+        "tweak-pack-mod": "dmitmel's tweak pack"
+      },
+      "twk": {
+        "render-hitboxes": {
+          "enable": {
+            "name": "顯示紅框",
+            "description": "在命中目標顯示紅框. \\c[2][debug]\\c[0]"
+          }
+        },
+        "teleport-anywhere": {
+          "enable": {
+            "name": "任意傳送",
+            "description": "只要點擊地圖傳送到任意區域或副本. \\c[2][cheat]\\c[0]"
+          }
+        },
+        "assist-scale-enemy-hp": {
+          "factor": {
+            "name": "修改敵人HP",
+            "description": "修改敵人HP. \\c[1]需重開! \\c[2][assist]"
+          }
+        },
+        "player-position-marker": {
+          "enable": {
+            "name": "在地圖顯示腳色",
+            "description": "在地圖上顯示腳色位子. \\c[2][QoL]"
+          }
+        },
+        "chest-radar": {
+          "enable": {
+            "name": "在地圖顯示寶箱",
+            "description": "在地圖顯示所有寶箱. \\c[2][cheat]"
+          }
+        },
+        "autoaim": {
+          "enable": {
+            "name": "開啟自動瞄準",
+            "description": "不需要移動滑鼠使用QE自動瞄準. \\c[2][cheat]"
+          }
+        },
+        "skip-title-screen-intro": {
+          "enable": {
+            "name": "跳過開頭 Logo 標題",
+            "description": "跳過煩人的開頭 Logo 標題. \\c[2][debug]"
+          }
+        }
+      },
+      "controls": {
+        "keys": {
+          "twk": {
+            "open-map-menu-shortcut": {
+              "key": "開/關 地圖目錄"
+            }
+          }
+        }
+      }
+    },
+    "menu": {
+      "map-menu": {
+        "teleport-anywhere": {
+          "question": "\\c[3]傳送\\c[0] 到地圖 \"[!]\"?",
+          "map-id": "\\c[3]地圖 ID:\\c[0] [!]"
+        }
+      }
+    }
+  }
+}

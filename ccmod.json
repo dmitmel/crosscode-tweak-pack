@@ -4,7 +4,9 @@
   "title": "dmitmel's tweak pack",
   "description": {
     "en_US": "Micro-mods by dmitmel in a single 999-in-1 package, ranging from QoL tweaks to cheats.",
-    "ru_RU": "Микро-моды от dmitmel в одной упаковке 999-in-1, начиная от QoL дополнений и заканчивая читами."
+    "ru_RU": "Микро-моды от dmitmel в одной упаковке 999-in-1, начиная от QoL дополнений и заканчивая читами.",
+    "zh_TW": "由 dmitmel 製作的一些增強遊戲體驗小工具.",
+    "zh_CN": "由 dmitmel 制作的一些增强游戏质量小工具."
   },
   "license": "CC0-1.0",
   "homepage": "https://github.com/dmitmel/crosscode-tweak-pack",
@@ -13,5 +15,10 @@
   },
   "plugin": "src/_plugin.js",
   "prestart": "src/_prestart.js",
-  "assets": ["data/lang/sc/gui.en_US.json.patch", "data/lang/sc/gui.ru_RU.json.patch"]
+  "assets": [
+    "data/lang/sc/gui.en_US.json.patch",
+    "data/lang/sc/gui.ru_RU.json.patch",
+    "data/lang/sc/gui.zh_TW.json.patch",
+    "data/lang/sc/gui.zh_CN.json.patch"
+  ]
 }

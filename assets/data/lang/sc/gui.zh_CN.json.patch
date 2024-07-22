@@ -1,0 +1,70 @@
+{
+  "labels": {
+    "options": {
+      "headers": {
+        "tweak-pack-mod": "dmitmel's tweak pack"
+      },
+      "twk": {
+        "render-hitboxes": {
+          "enable": {
+            "name": "显示红框",
+            "description": "在命中目标显示红框. \\c[2][debug]\\c[0]"
+          }
+        },
+        "teleport-anywhere": {
+          "enable": {
+            "name": "任意传送",
+            "description": "只要点击地图传送到任意局域或副本. \\c[2][cheat]\\c[0]"
+          }
+        },
+        "assist-scale-enemy-hp": {
+          "factor": {
+            "name": "修改敌人HP",
+            "description": "修改敌人HP. \\c[1]需重开! \\c[2][assist]"
+          }
+        },
+        "player-position-marker": {
+          "enable": {
+            "name": "在地图显示脚色",
+            "description": "在地图上显示脚色位子. \\c[2][QoL]"
+          }
+        },
+        "chest-radar": {
+          "enable": {
+            "name": "在地图显示宝箱",
+            "description": "在地图显示所有宝箱. \\c[2][cheat]"
+          }
+        },
+        "autoaim": {
+          "enable": {
+            "name": "开启自动瞄准",
+            "description": "不需要移动鼠标使用QE自动瞄准. \\c[2][cheat]"
+          }
+        },
+        "skip-title-screen-intro": {
+          "enable": {
+            "name": "跳过开头 Logo 标题",
+            "description": "跳过烦人的开头 Logo 标题. \\c[2][debug]"
+          }
+        }
+      },
+      "controls": {
+        "keys": {
+          "twk": {
+            "open-map-menu-shortcut": {
+              "key": "开/关 地图目录"
+            }
+          }
+        }
+      }
+    },
+    "menu": {
+      "map-menu": {
+        "teleport-anywhere": {
+          "question": "\\c[3]传送\\c[0] 到地图 \"[!]\"?",
+          "map-id": "\\c[3]地图 ID:\\c[0] [!]"
+        }
+      }
+    }
+  }
+}
